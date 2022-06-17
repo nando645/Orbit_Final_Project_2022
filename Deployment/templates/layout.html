@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+            <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <title>Lisence Plate Recognition</title>
+    <style>
+        body, header, footer{
+            font-family : Arial;
+        }
+
+        body {
+
+            box-sizing: border-box;
+            padding-bottom: 100px;
+            margin: 0;
+        }
+
+        .topnav, .clicker{
+            background-color: black;
+            overflow: hidden;
+            height: 60px;
+        }
+
+        .topnav a, .clicker{
+            font-family : Arial;
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 30px;
+            cursor: pointer;
+            
+        }
+
+        .topnav a:hover, .topnav button:hover{
+            background-color: #F15A24;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #F15A24;
+            color: white;
+        }
+        
+        .popups{
+            width: 400px;
+            background:lightgray;
+            border-radius: 10px;
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.1);
+            text-align: center;
+            padding: 0, 30px, 30px ;
+            color: #333;
+            visibility: hidden;
+            transition: transform 0.4s, top 0.4s;
+            
+        }
+
+        .popups h2{
+            color: black;
+            font-size: 38px;
+            font-weight: 500;
+            font-weight: bold;
+            margin: 30px 0 10px;
+        }
+
+        .data{
+            font-weight:normal;
+            margin-left: 15px;
+            font-size: 20px;
+            text-align:left;
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+        }
+
+        .popups button{
+            width: 100%;
+            margin-top: 50px;
+            padding: 10px, 0;
+            background: rgb(103, 104, 110);
+            color: white;
+            border: 0;
+            outline: none;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 2px, 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .openpopup{
+            visibility: visible;
+            top: 50%;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        h2{
+            color: white;
+            font-size: 25px;
+        }
+
+        .container{
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+        
+        .uploader{
+            display: flex;
+            margin-left: 150px;
+            margin-right: 150px;
+            align-items: center;
+            justify-content: center;
+            background: #F15A24;
+            border-radius: 8px;
+            padding: 60px;
+            top: 30%;
+        }
+
+        footer{
+            background-color: rgb(24, 24, 24);
+            position:fixed;
+            margin-top:20px;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .btn{
+             background-color: lightblue;
+        }
+        
+        .desc{
+        font-family: Verdana, Tahoma, sans-serif;
+    }
+
+    .desc button{
+        width:400px;
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        background: rgb(38, 204, 255);
+        color: white;
+        border: 0;
+        outline: none;
+        font-size: 25px;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 2px, 5px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+    }
+
+    * {box-sizing:border-box}
+
+    .slideshow-container {
+    
+    max-width: 50%;
+    position: relative;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 2s;
+    }
+    
+    .box {
+    
+    max-width: 75%;
+    position: relative;
+    }
+    
+
+    .mySlides {
+    display: none;
+    }
+
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+    }
+
+    .next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+    }
+
+    .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    }
+
+    .text {
+        vertical-align: top;
+    }
+    
+
+    .container-slide {
+    position: relative;
+    }
+
+    .img-step {
+        width:  100%;
+        height: 50%;
+    }
+
+    .showhidden{
+        opacity: 1;
+    }
+    
+    </style>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <div class="topnav">
+        <a class="active" href="/">App</a>
+         <a href="{{ url_for('desc') }}">Description</a> 
+        <button type="submit" class="clicker" onclick="option('popup1')">About US</button>
+
+        <div class="popups" id="popup1">
+            <h2>About Us</h2>
+            <div class="data">
+                <p>Anggota kelompok kami:</p>
+                <ol type="1">
+                    <li>Fernando - Better - Universitas Esa Unggul - Modelling & OCR</li>
+                    <li>Jeskel Fornadi Gotama - Developa - Universitas Esa Unggul - Data Gathering & Preparation</li>
+                    <li>Oki Gunawan Pratama - Better - Universitas Esa Unggul - Deployment</li>
+                </ol>
+            </div>
+            <button type="button"onclick="closepopup()">Close</button>
+        </div>
+    </div>
+        {% block body%} 
+        
+        
+        {% endblock %}
+
+    <script src="" async defer></script>
+    <script>
+
+            let hidden = document.getElementById("content");
+
+            function show(){
+                hidden.classList.add("showhidden")
+            }
+
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+        
+            slides[slideIndex-1].style.display = "block";
+            }
+    var popup 
+    var x
+
+    function option(x){
+        popup = document.getElementById(x);
+        openpopup();
+    }
+
+    function openpopup(){
+        popup.classList.add("openpopup")
+    }
+
+    function closepopup(){
+        popup.classList.remove("openpopup")
+    }
+
+    </script>
+    <!-- Footer -->
+    <footer>
+        <h2>Orbit Final Project</h2>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <br>
+  <div style="width:100%; display: flex; justify-content: center;">
+        <div>
+            <h3>PENTING</h3>
+            <p>Mohon baca deskripsi pada menu description di atas jika baru pertama kali menggunakan web app ini.</p>
+        </div>
+  </div>
+  <div class="container">
+      <br><br>
+      <div class="uploader">
+          <form action="#" method="POST" enctype="multipart/form-data">
+              <div class="input-group">
+                  <input type="file" class="form-control" name="image_name" accept=".png, .jpg, .jpeg, .webp" required>
+                  <input type="submit" value="Upload" class="btn btn-outline-secondary">
+              </div>
+          </form>
+      </div>
+  </div>
+  {% if upload %}
+    <div class="container">
+      <br><br>
+        <table>
+            <tr>
+                <td>
+                    <img class="rounded float-left img-fluid" src="static/upload/{{ upload_image }}" alt="">
+                </td>
+                <td>
+                    <img class="rounded float-right img-fluid" src="static/predict/{{ upload_image }}" alt="">
+                </td>
+                <td>
+                    <img class="rounded float-right img-fluid" src="static/blurred_image/{{ upload_image }}" alt="">
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <th>Original Image</th>
+                <th>Predicted Image</th>
+                <th>Blurred License Plate Image</th>
+            </tr>
+        </table>
+        <br>
+        <table style="border: 1px solid; black; width:100%;">
+            <tr style="border: solid black; text-align: center;">
+                <th >Cropped License Plate Image</th>
+                <th>OCR Result</th>
+                <th>Preprocessed OCR Result</th>
+            </tr>
+            <tr style="border: solid black; text-align: center;">
+                <td>
+                    <img class="img-fluid" src="static/roi/{{ upload_image }}" alt="">
+                </td>
+                <td >
+                    <h1 class="display-8">{{ text }}</h1>
+                </td>
+                <td >
+                    <h1 class="display-8">{{ text2 }}</h1>
+                </td>
+            </tr>
+        </table>
+    </div>
+  {% endif %}
+
+
+{% endblock %}
