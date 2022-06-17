@@ -1,0 +1,26 @@
+<annotation>
+	<folder>platerecogntion-ocr</folder>
+	<filename>taksi-reguler-jenis-multi-purpose-vehicle-mpv-honda-mobilio-yang-diluncurkan-pt-blue-bird-tbk_20160323_132313.jpg</filename>
+	<path>D:\DL\platerecogntion-ocr\taksi-reguler-jenis-multi-purpose-vehicle-mpv-honda-mobilio-yang-diluncurkan-pt-blue-bird-tbk_20160323_132313.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>700</width>
+		<height>393</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>86</xmin>
+			<ymin>250</ymin>
+			<xmax>179</xmax>
+			<ymax>302</ymax>
+		</bndbox>
+	</object>
+</annotation>

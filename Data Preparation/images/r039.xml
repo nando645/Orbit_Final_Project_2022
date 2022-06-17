@@ -1,0 +1,26 @@
+<annotation>
+	<folder>JPEGImages</folder>
+	<filename>r039.jpg</filename>
+	<path>D:\Deep Learning Test\anprid\Tensorflow\workspace\images\JPEGImages\r039.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2268</width>
+		<height>4032</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>807</xmin>
+			<ymin>2689</ymin>
+			<xmax>1822</xmax>
+			<ymax>3105</ymax>
+		</bndbox>
+	</object>
+</annotation>

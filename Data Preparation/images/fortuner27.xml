@@ -1,0 +1,26 @@
+<annotation>
+	<folder>JPEGImages</folder>
+	<filename>fortuner27.jpg</filename>
+	<path>D:\Deep Learning Test\anprid\Tensorflow\workspace\images\JPEGImages\fortuner27.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>860</width>
+		<height>645</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>114</xmin>
+			<ymin>444</ymin>
+			<xmax>238</xmax>
+			<ymax>533</ymax>
+		</bndbox>
+	</object>
+</annotation>

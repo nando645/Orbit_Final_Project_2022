@@ -1,0 +1,26 @@
+<annotation>
+	<folder>platerecogntion-ocr</folder>
+	<filename>photo_2022-05-19_14-42-48.jpg</filename>
+	<path>D:\DL\platerecogntion-ocr\photo_2022-05-19_14-42-48.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>961</width>
+		<height>1280</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>103</xmin>
+			<ymin>396</ymin>
+			<xmax>735</xmax>
+			<ymax>692</ymax>
+		</bndbox>
+	</object>
+</annotation>

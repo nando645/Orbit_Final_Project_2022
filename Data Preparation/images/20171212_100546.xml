@@ -1,0 +1,26 @@
+<annotation>
+	<folder>plat</folder>
+	<filename>20171212_100546.jpg</filename>
+	<path>/home/idiot/Dataset/foto plat/plat/20171212_100546.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3264</width>
+		<height>1836</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>14</xmin>
+			<ymin>69</ymin>
+			<xmax>3144</xmax>
+			<ymax>1328</ymax>
+		</bndbox>
+	</object>
+</annotation>

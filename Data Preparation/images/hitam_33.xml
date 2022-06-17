@@ -1,0 +1,26 @@
+<annotation>
+	<folder>JPEGImages</folder>
+	<filename>hitam_33.jpg</filename>
+	<path>D:\Deep Learning Test\anprid\Tensorflow\workspace\images\JPEGImages\hitam_33.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>608</width>
+		<height>505</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>38</xmin>
+			<ymin>366</ymin>
+			<xmax>125</xmax>
+			<ymax>434</ymax>
+		</bndbox>
+	</object>
+</annotation>

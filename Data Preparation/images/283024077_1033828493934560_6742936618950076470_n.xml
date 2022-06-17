@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>283024077_1033828493934560_6742936618950076470_n.jpg</filename>
+	<path>D:\DL\platerecogntion-ocr\1_Labeling\images\283024077_1033828493934560_6742936618950076470_n.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>600</width>
+		<height>450</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>270</xmin>
+			<ymin>366</ymin>
+			<xmax>365</xmax>
+			<ymax>392</ymax>
+		</bndbox>
+	</object>
+</annotation>

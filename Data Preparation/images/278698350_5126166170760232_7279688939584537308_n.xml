@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images 2</folder>
+	<filename>278698350_5126166170760232_7279688939584537308_n.png</filename>
+	<path>C:\Users\THAIPAK KEL\Downloads\images 2\278698350_5126166170760232_7279688939584537308_n.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>261</width>
+		<height>261</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>85</xmin>
+			<ymin>73</ymin>
+			<xmax>172</xmax>
+			<ymax>98</ymax>
+		</bndbox>
+	</object>
+</annotation>

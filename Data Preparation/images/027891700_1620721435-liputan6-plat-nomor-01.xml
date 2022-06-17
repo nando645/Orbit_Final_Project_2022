@@ -1,0 +1,26 @@
+<annotation>
+	<folder>platerecogntion-ocr</folder>
+	<filename>027891700_1620721435-liputan6-plat-nomor-01.jpg</filename>
+	<path>D:\DL\platerecogntion-ocr\027891700_1620721435-liputan6-plat-nomor-01.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>360</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>249</xmin>
+			<ymin>191</ymin>
+			<xmax>338</xmax>
+			<ymax>221</ymax>
+		</bndbox>
+	</object>
+</annotation>

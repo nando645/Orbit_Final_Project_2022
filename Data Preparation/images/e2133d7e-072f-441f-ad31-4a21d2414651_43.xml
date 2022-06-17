@@ -1,0 +1,26 @@
+<annotation>
+	<folder>platerecogntion-ocr</folder>
+	<filename>e2133d7e-072f-441f-ad31-4a21d2414651_43.jpg</filename>
+	<path>D:\DL\platerecogntion-ocr\e2133d7e-072f-441f-ad31-4a21d2414651_43.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>480</width>
+		<height>358</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>230</xmin>
+			<ymin>203</ymin>
+			<xmax>319</xmax>
+			<ymax>239</ymax>
+		</bndbox>
+	</object>
+</annotation>

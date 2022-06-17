@@ -1,0 +1,26 @@
+<annotation>
+	<folder>platerecogntion-ocr</folder>
+	<filename>BUS ASKAB.jpg</filename>
+	<path>D:\DL\platerecogntion-ocr\BUS ASKAB.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>959</width>
+		<height>1280</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>432</xmin>
+			<ymin>1092</ymin>
+			<xmax>616</xmax>
+			<ymax>1158</ymax>
+		</bndbox>
+	</object>
+</annotation>

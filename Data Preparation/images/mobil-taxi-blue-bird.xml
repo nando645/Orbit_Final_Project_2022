@@ -1,0 +1,26 @@
+<annotation>
+	<folder>platerecogntion-ocr</folder>
+	<filename>mobil-taxi-blue-bird.jpg</filename>
+	<path>D:\DL\platerecogntion-ocr\mobil-taxi-blue-bird.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>480</width>
+		<height>368</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>195</xmin>
+			<ymin>166</ymin>
+			<xmax>308</xmax>
+			<ymax>206</ymax>
+		</bndbox>
+	</object>
+</annotation>
